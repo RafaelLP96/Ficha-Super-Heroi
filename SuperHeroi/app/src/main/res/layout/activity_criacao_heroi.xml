@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAFFDB"
+    tools:context=".CriacaoHeroiActivity">
+
+    <TextView
+        android:id="@+id/txtBoasVindas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioAlinhamento"
+        android:layout_width="134dp"
+        android:layout_height="217dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtAlinhamento"
+            android:layout_width="160dp"
+            android:layout_height="37dp"
+            android:text="Escolha o alinhamento:" />
+
+        <RadioButton
+            android:id="@+id/rdAlinhamento1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heroi" />
+
+        <RadioButton
+            android:id="@+id/rdAlinhamento2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vilão" />
+
+        <RadioButton
+            android:id="@+id/rdAlinhamento3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anti-Heroi" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnGerar"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="732dp"
+        android:text="Gerar Ficha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/PoderesLayout"
+        android:layout_width="174dp"
+        android:layout_height="349dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha seus poderes:" />
+
+        <CheckBox
+            android:id="@+id/Poder1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super-Visão" />
+
+        <CheckBox
+            android:id="@+id/Poder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raio-Laser" />
+
+        <CheckBox
+            android:id="@+id/Poder3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super-Força" />
+
+        <CheckBox
+            android:id="@+id/Poder4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super-Velocidade" />
+
+        <CheckBox
+            android:id="@+id/Poder5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voar" />
+
+        <CheckBox
+            android:id="@+id/Poder6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telepatia" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBoasVindas">
+
+        <RadioGroup
+            android:id="@+id/radioAvatares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdAvatar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/avatar1"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rdAvatar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/avatar2"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rdAvatar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/avatar3"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rdAvatar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/avatar4"
+                android:gravity="center"
+                android:padding="8dp" />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Escolha um avatar"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
